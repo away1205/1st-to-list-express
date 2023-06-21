@@ -1,0 +1,18 @@
+<%- include('header') -%>
+
+  <h1><%= nameList %></h1>
+
+  <div class="container">
+      <% for(let i = 0; i<newAddItem.length; i++){ %>
+        <div class="box">
+          <input type="checkbox">
+          <p> <%= newAddItem[i] %> </p>
+        </div>
+      <% } %>
+
+    <form action="/" method="post">
+      <input type="text" name="newItem">
+      <button type="submit" name="button" value="<%= nameList %>">Add</button>
+    </form>
+  </div>
+<%- include('footer') -%>

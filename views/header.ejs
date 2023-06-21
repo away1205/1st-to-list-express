@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="css/pico.min.css">
+  <style>
+    html, body{
+      height: 100%;
+    }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .container{
+      /* background-color: whitesmoke; */
+      padding: 1rem;
+      width: 50%;
+    }
+    .box{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      padding: .5rem;
+      gap: .25rem;
+    }
+    p{
+      text-align: center;
+      margin: 0;
+    }
+    input:checked+p{
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
